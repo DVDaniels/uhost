@@ -1,16 +1,33 @@
-body {
-    font-family: 'Montserrat', sans-serif;
+* {
+    box-sizing: border-box;
 }
 
-#product-overview  h1 {
-    background-color: brown;
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+
+main {
+    height: 500px;
+}
+
+#product-overview {
+    background: url("freedom.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 520px;
+    padding: 10px;
 }
 
 .section-title {
     color:cornflowerblue;
 }
 
-h1 {
+#product-overview h1 {
     color: #fff;
     font-family: 'Roboto', sans-serif;
 }
@@ -18,3 +35,71 @@ h1 {
 /* h1 {
     font-family: sans-serif;
 } */
+
+.main-header {
+    width: 100%;
+    background-color: #2ddf5c;
+    padding: 10px 15px;
+   
+}
+
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand{
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 74px);
+    vertical-align: middle;
+}
+
+.main-nav__items a {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 3px 0;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-nav__items a:hover,
+.main-nav__items a:active {
+    color: aliceblue;
+    border-bottom: 5px solid #fff;
+}
+
+.main-nav__item--cta a {
+    color: #fff;
+    background: red;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+    color: red;
+    background: #fff;
+    border: none;
+}
+
+#plans {
+    padding: 20px;
+}
