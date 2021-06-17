@@ -13,22 +13,28 @@
 </head>
 
 <body>
+    <div class="background"></div>
     <header class="main-header">
-        <div><a href="../index.html" class="main-header__brand">uHost</a></div>
+        <div>
+            <a href="../index.html" class="main-header__brand">
+                <img src="../images/uhost-icon.png" alt="Your favorite hosting company">
+            </a>
+        </div>
 
         <nav class="main-nav">
             <ul class="main-nav__items">
-                <li class="main-nav__item"><a href="../index.html">Packages</a></li>
-                <li class="main-nav__item"><a href="../index.html">Customers</a></li>
+                <li class="main-nav__item"><a href="/packages/index.html">Packages</a></li>
+                <li class="main-nav__item"><a href="/customers/index.html">Customers</a></li>
                 <li class="main-nav__item main-nav__item--cta"><a href="../index.html">Start Hosting</a></li>
             </ul>
         </nav>
     </header>
     <main>
 
-        <section class="plan">
+        <section class="plan plus-plan">
             <a href="#" class="plan__box">
                 <h1 class="plan__title">Our PLUS Plan</h1>
+                <h2 class="plan__badge">RECOMMENDED</h2>
                 <h2 class="plan__subtitle">The most popular choice of our customers.</h2>
                 <p class="plan__description">Benefit from increased storage and faster support to ensure that your mission-critical data and applications
                     are always available!</p>
@@ -49,10 +55,9 @@
                 <p class="plan__description">The best solution for small to large enterprises. Because hosting shouldn't be in the way!</p>
             </a>
         </section>
+    </main>
 
-
-
-        <footer class="main-footer">
+    <footer class="main-footer">
                 <nav>
                     <ul class="main-footer__links">
                         <li class="main-footer__link">
@@ -64,6 +69,5 @@
                     </ul>
                 </nav>
         </footer>
-    </main>
 </body>
 </html>
