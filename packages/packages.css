@@ -85,3 +85,17 @@ main {
     clear: both;
 }
 
+@media (min-width: 40rem) {
+    main {
+      max-width: 1500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
+
+@media (min-width: 1500px) {
+    main {
+      margin: 3rem auto .5rem auto;
+      max-width: 1500px;
+    }
+}
