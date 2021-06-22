@@ -18,7 +18,7 @@ main {
     display: none;
     top: 0;
     left: 0;
-    z-index: 10000;
+    z-index: 100;
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
@@ -142,6 +142,12 @@ main {
 
 .button:focus {
     outline: none;
+}
+
+.button[disabled] {
+    cursor: not-allowed;
+    border: #a1a1a1;
+    background: #a1a1a1;
 }
 
 
