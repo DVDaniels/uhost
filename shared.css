@@ -1,4 +1,6 @@
 /* Global Settings */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 * {
     box-sizing: border-box;
@@ -6,6 +8,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0px;
 }
 
@@ -65,17 +68,16 @@ main {
     text-decoration: none;
     font-weight: bold;
     /* font-size: 1.38rem; */
-    height: 2.5rem;
-    display: inline-block;
-    vertical-align: middle;
 }
 
 .main-header__brand img {
-   height: 100%;
+    height: 2.5rem;
+    vertical-align: middle;
 }
 
 .main-nav {
     display: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main-nav__items a,
@@ -165,7 +167,9 @@ main {
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-footer__link {
@@ -199,9 +203,12 @@ main {
     width: 90%;
     height: 100%;
     list-style: none;
-    margin: 10% auto;
+    margin: 0 auto;
     padding: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .mobile-nav__item {
@@ -226,18 +233,17 @@ main {
       }
 
       .main-header {
-          display: inline-block;
-          vertical-align: middle;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
       }
 
       .main-nav {
         display: inline-block;
         position: relative;
-        margin-top: -1.5rem;
         text-align: right;
         width: 100%;
         vertical-align: middle;
-        height: 30px;
     }
     
     .main-nav__items a,
@@ -252,10 +258,11 @@ main {
         margin: 0;
         padding: 0;
         list-style: none;
+        display: flex;
+        justify-content: flex-end;
     }
     
     .main-nav__item {
-        display: inline-block;
         margin: 0 1rem;
     }
     
@@ -291,8 +298,13 @@ main {
        width: 100%;
     }
 
+    .main-footer__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+     }
+
      .main-footer__link {
-        display: inline-block;
-        margin: 0 1rem;
+        margin: 1rem;
      }
 }

@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'AnonymousPro';
+    src: url("anonymousPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'AnonymousPro';
+    src: url("anonymousPro-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
 main {
     padding: 2rem;
     margin-top: 50px;
@@ -64,6 +75,8 @@ main {
     background-color: #fff;
     padding: .625rem;
     color: rgb(0, 91, 0);
+    font-size: 1.2rem;
+    /* font shothand -> font-style font-variant font-weight font-size/line-height font-family */
 }
 
 .premium-plan {
